@@ -1,0 +1,27 @@
+//nth max element from array
+
+package programss;
+
+import java.util.Arrays;
+
+public class Prog2 {
+	public static void main(String[] args) {
+		int a[] = { 20, 30, 40, 50, 80, 10, 90, 60, 100, 100 };
+		int n = 2; // 1st max element
+		for (int i = 0; i < a.length - 1; i++) {
+			for (int j = i; j <= a.length - 1; j++) {
+				if (a[i] > a[j]) {
+					if (a[i] == a[j]) {
+						a[i] = -1;
+					}
+					int temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(a));
+		if (0 <= n && n <= a.length)
+			System.out.println(a[a.length - n]);
+	}
+}

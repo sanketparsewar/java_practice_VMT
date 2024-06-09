@@ -1,0 +1,37 @@
+package arrays.day03;
+
+//import java.util.Arrays;
+
+public class ArrayQuestion1 {
+public static void main(String[] args) {
+	int a[]= {124,651,3896,467,234,977,543,23,23,467,235,112};
+	int temp=a[0];
+	int length=0;
+	while(temp!=0 && temp>10) {
+	  temp=temp/10;
+	  length++;
+	}
+	System.out.println(temp);
+	System.out.println(length);
+	int f=temp;
+	f*=Math.pow(10, length);
+	a[0]-=f;
+	System.out.println(a[0]);
+	a[0]*=10;
+	a[0]+=temp;
+	System.out.println(a[0]);
+	
+	
+	
+	
+//	int a[]= {34,18,24,16,12,20,32,44,15,41};
+//	for (int i = 0; i < a.length; i++) {
+//		if(a[i]%4==0)
+//			a[i]=(a[i]%10==4)?-3:-1;
+//		
+//		else if(a[i]%10==4) 
+//			a[i]=-2;	
+//	}
+//	System.out.println(Arrays.toString(a));
+}
+}

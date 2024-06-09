@@ -1,0 +1,21 @@
+package programss;
+
+import java.util.Arrays;
+
+public class CheckPalindrome {
+public static void main(String[] args) {
+	int a[]= {6776,141,4,78987,3212,22,242};
+	for(int i=0;i<a.length;i++) {
+		int sum=0,l=0,temp=a[i]; //sum=0		
+		while(temp!=0) {
+			sum*=10; //sum=677
+			l=temp%10;//l=6
+			temp/=10;//0
+			sum+=l;//sum=6776
+		}
+		if(a[i]==sum)
+			a[i]=1;
+	}
+	System.out.println(Arrays.toString(a));
+}
+}

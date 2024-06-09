@@ -1,0 +1,10 @@
+package arrays.day03;
+
+public class SumAndAppendAtEnd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

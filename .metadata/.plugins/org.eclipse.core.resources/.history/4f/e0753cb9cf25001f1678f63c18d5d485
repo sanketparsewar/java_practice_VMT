@@ -1,0 +1,71 @@
+package assignmentsVMT1;
+
+import assignmentsVMT1.exceptionss.InvalidAgeException;
+import assignmentsVMT1.exceptionss.InvalidEmailException;
+import assignmentsVMT1.exceptionss.InvalidPasswordException;
+
+public class School {
+//	private void homepage(User u1) {
+//
+//	}
+
+//	private RunTimeException VerifyUser(User u1) {
+//		return null;
+//	}
+
+	public boolean checkPassword(String upassword) {
+		// check length between 8 to 15 of password
+		if (!(upassword.length() >= 8 && upassword.length() <= 15))
+			return false;
+
+		// check at least 1 digit in password
+		if (true) {
+			for (int i = 0; i <= 9; i++) {
+				String digit = Integer.toString(i);
+				if (!upassword.contains(digit))
+					return false;
+				
+			}
+		}
+
+		// check at least 1 lower case in password
+		if (true) {
+			for (int i = 65; i <= 90; i++) {
+				String Lcharacter = Character.toString((char) i);
+				if (!upassword.contains(Lcharacter))
+					return false;
+			}
+		}
+
+		// check at least 1 Upper case in password
+		if (true) {
+			for (int i = 97; i <= 122; i++) {
+				String Ucharacter = Character.toString((char) i);
+				if (!upassword.contains(Ucharacter))
+					return false;
+			}
+		}
+
+		// check at least 1 special character in password
+		if (!(upassword.contains("@") || upassword.contains("#") || upassword.contains("!") || upassword.contains("~")
+				|| upassword.contains("$") || upassword.contains("%") || upassword.contains("^")
+				|| upassword.contains("&") || upassword.contains("*") || upassword.contains("(")
+				|| upassword.contains(")") || upassword.contains("-") || upassword.contains("+")
+				|| upassword.contains("/") || upassword.contains(":") || upassword.contains(".")
+				|| upassword.contains(", ") || upassword.contains("<") || upassword.contains(">")
+				|| upassword.contains("?") || upassword.contains("|"))) {
+			return false;
+		}
+
+		return true;
+
+	}
+
+//	public void login(User u1) {
+//		RunTimeException r = new verifyUser(u1);
+//		if (r == null)
+//			homepage(u1);
+//		else
+//			throw r;
+//	}
+}

@@ -1,0 +1,10 @@
+package arrays.day03;
+
+import java.util.Arrays;
+
+public class prog2 {
+	public static void main(String[] args) {
+		int index[]= {120,0200,016};
+		System.out.println(Arrays.toString(index));
+	}
+}

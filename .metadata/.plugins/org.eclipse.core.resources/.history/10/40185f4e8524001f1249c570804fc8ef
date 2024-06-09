@@ -1,0 +1,17 @@
+package thisKeyword;
+
+public class Demo1 {
+	int a = 10, b = 20;
+	Demo1() {
+		this.a=12;
+		this.b=23;
+		System.out.println("Default const callled Demo1");
+	}
+	Demo1(int a,int b){
+		System.out.println("Parameterised constructor of Demo1");
+	}
+	void m1() {
+		int a=5,b=6;
+		System.out.println("a= "+a+" b="+b);
+	}
+}

@@ -1,0 +1,15 @@
+package assignmentsVMT1;
+
+public class SiteMain {
+	public static void main(String[] args) {
+		User u = new User();
+		u.setuname("Sanket");
+		u.setuemail("sanket@gmail.com");
+		u.setupassword("123");
+		u.setuage(21);
+		u.getuname();
+		u.getuemail();
+		u.getupassword();
+		u.getuage();
+	}
+}

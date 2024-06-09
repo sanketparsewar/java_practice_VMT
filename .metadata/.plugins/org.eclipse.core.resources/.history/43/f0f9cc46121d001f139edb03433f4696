@@ -1,0 +1,10 @@
+
+package arrays.day03;
+
+public class prog2 {
+	public static void main(String[] args) {
+		char a[]= {'A','B'};
+		String s= new String(a);
+		System.out.println(s);
+	}
+}

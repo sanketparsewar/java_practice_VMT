@@ -1,0 +1,14 @@
+//wap to shift first digit at last
+//input:{124,651,3896,467,234,977,543,23,23,467,235,112}
+//output:{241,516
+package arrays.day03;
+
+public class ArrayQuestion3 {
+	int a[]= {124,651,3896,467,234,977,543,23,23,467,235,112};
+	int n=123;
+	while(n!=0) {
+		int temp=n/10;
+
+	}
+	System.out.print(temp);
+}

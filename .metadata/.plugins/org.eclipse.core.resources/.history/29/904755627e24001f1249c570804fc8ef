@@ -1,0 +1,8 @@
+package inhertitance;
+
+public class CalculatorMain {
+public static void main(String[] args) {
+	ScifiCalculator s = new ScifiCalculator();
+	System.out.println( s.cube(5));
+}
+}

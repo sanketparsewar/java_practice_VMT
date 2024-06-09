@@ -1,0 +1,24 @@
+//Empid,name,salary,designation,address,
+//e={
+package programss;
+
+public class Employee {
+	private int employeeId;
+	private String employeeName;
+	private int employeeSalary;
+	private String employeeDesignation;
+	private String employeeAddress;
+	
+	public void setEmployeeId(int employeeId) {
+		this.employeeId=employeeId;
+	}
+	public int  getEmployeeId() {
+		return employeeId;
+	}
+	
+public static void main(String[] args) {
+	Employee e= new Employee();
+	e.setEmployeeId(13);
+	System.out.println(e.getEmployeeId());
+}
+}

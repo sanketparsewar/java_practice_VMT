@@ -1,0 +1,13 @@
+package arrays.day03;
+
+public class SumAndAppendAtStart {
+	public static void main(String[] args) {
+		int a[]= {10,132,453,5467,7667,87};
+		for (int i = 0; i < a.length; i++) {
+			int temp=a[i];
+			while(temp!=0) {
+				
+			}
+		}
+	}
+}

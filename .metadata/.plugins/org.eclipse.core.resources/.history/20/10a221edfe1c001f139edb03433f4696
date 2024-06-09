@@ -1,0 +1,8 @@
+package arrays.day03;
+
+public class prog2 {
+	public static void main(String[] args) {
+		int index[]=new int[0];
+		System.out.println(index.length);
+	}
+}

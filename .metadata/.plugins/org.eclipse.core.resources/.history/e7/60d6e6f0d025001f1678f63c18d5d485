@@ -1,0 +1,19 @@
+package assignmentsVMT1;
+
+import assignmentsVMT1.exceptionss.InvalidAgeException;
+import assignmentsVMT1.exceptionss.InvalidEmailException;
+import assignmentsVMT1.exceptionss.InvalidPasswordException;
+
+public class SiteMain {
+	public static void main(String[] args) {
+		User u1 = new User();
+		u1.setuname("Sanket");
+		u1.setuemail("sanket@gmail.com");
+		u1.setupassword("SANK@");
+		u1.setuage(21);
+		System.out.println(u1);
+		School s = new School();
+		System.out.println(s.checkPassword(u1.getupassword()));;
+
+	}
+}

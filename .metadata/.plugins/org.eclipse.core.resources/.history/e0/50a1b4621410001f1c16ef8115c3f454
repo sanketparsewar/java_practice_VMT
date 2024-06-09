@@ -1,0 +1,23 @@
+package arrays.day03;
+
+public class ArrayQuestion1 {
+public static void main(String[] args) {
+	int a[]= {10,20,4,05,67,45,34,32,20,28,90};
+	for (int i = 0; i < a.length; i++) {
+		if(a[i]%4==0)
+		{
+			if(a[i]%10==4) {
+				System.out.println("Gray");
+			}
+			else
+			System.out.println("Black");
+		}
+		else if(a[i]%10==4) {
+			System.out.println("White");
+		}
+		else {
+			System.out.println(a[i]);
+		}
+	}
+}
+}

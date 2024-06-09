@@ -1,0 +1,8 @@
+package programss;
+public class Prog {
+	public static void main(String[] args) {
+		int a[]= {30,50,10,80,20,60,40,90,70,100};
+		
+		
+	}
+}

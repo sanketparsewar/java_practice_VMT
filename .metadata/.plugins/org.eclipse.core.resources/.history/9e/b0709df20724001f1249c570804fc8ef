@@ -1,0 +1,13 @@
+package programss;
+
+public class EmployeeMain {
+public static void main(String[] args) {
+	Employee e = new Employee();
+	e.setEmployeeId(1);
+	e.setEmployeeName("Sanket");
+	e.setEmployeeSalary(500);
+	System.out.println(e.getEmployeeId());
+	System.out.println(e.getEmployeeName());
+	System.out.println(e.getEmployeeSalary());
+}
+}

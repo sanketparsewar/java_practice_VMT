@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;arrays.day02.LastToFirstShiftWithTemp&apos; to &apos;ShiftLastToFirstWithTemp&apos;&#x0D;&#x0A;- Original project: &apos;VibrantMinds&apos;&#x0D;&#x0A;- Original element: &apos;arrays.day02.LastToFirstShiftWithTemp&apos;&#x0D;&#x0A;- Renamed element: &apos;arrays.day02.ShiftLastToFirstWithTemp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;LastToFirstShiftWithTemp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;arrays.day02{LastToFirstShiftWithTemp.java[LastToFirstShiftWithTemp" matchStrategy="1" name="ShiftLastToFirstWithTemp" qualified="false" references="true" similarDeclarations="false" stamp="1716700752955" textual="false" version="1.0"/>
+</session>

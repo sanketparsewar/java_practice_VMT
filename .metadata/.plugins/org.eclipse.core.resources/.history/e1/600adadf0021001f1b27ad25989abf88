@@ -1,0 +1,9 @@
+package programss;
+
+public class Prog {
+	public static void main(String[] args) {
+		float a=10;
+		byte b=3;
+		System.out.println(a/b);
+	}
+}
