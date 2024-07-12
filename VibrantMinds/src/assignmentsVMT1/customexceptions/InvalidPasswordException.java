@@ -8,5 +8,6 @@ public class InvalidPasswordException extends RuntimeException {
 	}
 	public String toString() {
 		return "InvalidPasswordException: "+msg;
-	}
+	}	
 }
+

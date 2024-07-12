@@ -8,6 +8,7 @@ public class ArrayQuestion2 {
 		for (int i = 0; i < a.length; i++) {
 			a[i] = (a[i] % 4 == 0) ? (a[i] % 6 == 0) ? -3 : -1 : (a[i] % 6 == 0) ? -2 : a[i];
 		}
+		
 		System.out.println(Arrays.toString(a));
 	}
 }

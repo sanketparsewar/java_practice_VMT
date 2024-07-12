@@ -1,9 +1,0 @@
-package thisKeyword;
-
-public class MainClass {
-public static void main(String[] args) {
-	Demo1 d= new Demo1(2,5);
-	d.m1();
-//	Demo1(2,5);
-}
-}

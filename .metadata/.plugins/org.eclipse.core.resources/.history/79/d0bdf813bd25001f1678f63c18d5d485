@@ -1,5 +1,0 @@
-package assignmentsVMT1.extension;
-
-public class InvalidAgeException {
-
-}

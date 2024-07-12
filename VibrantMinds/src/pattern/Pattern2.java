@@ -58,6 +58,5 @@ public class Pattern2 {
 				System.out.print(j);
 			System.out.println();
 		}
-
 	}
 }

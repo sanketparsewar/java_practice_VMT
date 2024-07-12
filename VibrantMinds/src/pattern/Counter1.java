@@ -17,5 +17,17 @@ public class Counter1 {
 				System.out.print(counter2-- + "\t");
 			System.out.println();
 		}
+		
+		System.out.println();
+		
+		int counter3=1;
+		for(int i=1;i<=n;i++) {
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(counter3+"\t");
+				counter3++;
+			}
+			System.out.println();
+		}
 	}
 }

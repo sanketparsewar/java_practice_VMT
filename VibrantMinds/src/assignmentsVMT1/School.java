@@ -13,7 +13,7 @@ public class School {
 
 	private RuntimeException verifyUser(User u) {
 		
-//-----------------------------------------------------------------------
+
 //		//check Age
 		if (!(u.getuage() >= 6))throw new InvalidAgeException("Age Should be not less than 6");
 //-----------------------------------------------------------------------
@@ -29,12 +29,12 @@ public class School {
 				|| u.getuemail().contains("^") || u.getuemail().contains("&") || u.getuemail().contains("*")
 				|| u.getuemail().contains("(") || u.getuemail().contains(")") || u.getuemail().contains("-")
 				|| u.getuemail().contains("+") || u.getuemail().contains("/") || u.getuemail().contains(":")
-			    || u.getuemail().contains(", ") || u.getuemail().contains("<")
+			    || u.getuemail().contains(", ")|| u.getuemail().contains("<")
 				|| u.getuemail().contains(">") || u.getuemail().contains("?")
 				|| u.getuemail().contains("|") ))
 			throw new InvalidEmailException("Special character except @ not allowed!");
 		
-		if(u.getuemail().split("@").length>2)throw new InvalidEmailException("Invalid character!");
+		if(u.getuemail().split("@").length!=2)throw new InvalidEmailException("Invalid character!");
 		
 
 		// check valid email endings
@@ -54,12 +54,12 @@ public class School {
 		}
 		
 		// check at least 1 lower case in password
-		for (int i = 65; i <= 90; i++) {
+		for (int i = 'A'; i <= 'Z'; i++) {
 			if (!u.getupassword().contains(Character.toString((char) i)))count++;
 		}
 
 		// check at least 1 Upper case in password
-		for (int i = 97; i <= 122; i++) {
+		for (int i = 'a'; i <= 'z'; i++) {
 			if (!u.getupassword().contains(Character.toString((char) i)))count++;
 		}
 
