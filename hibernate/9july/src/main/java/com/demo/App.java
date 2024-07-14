@@ -1,6 +1,7 @@
 package com.demo;
 
 import java.util.List;
+
 import java.util.Random;
 
 import org.hibernate.Session;
@@ -17,7 +18,6 @@ public class App {
 		Transaction tx = session.beginTransaction();
 
 		/*
-		  
 		// enter multiple records in table
 		for (int i = 1; i <= 5000; i++) { // 5000 records
 			Student s1 = new Student();
@@ -73,7 +73,7 @@ public class App {
 			System.out.println(s);
 		*/
 //		------------------------------------
-//		find all students through method chaining
+//		display all students through method chaining
 		/*
 		session.createQuery("from Student",Student.class)
 		.list()
@@ -87,6 +87,46 @@ public class App {
 			System.out.println(s);
 		*/
 //		-------------------------------------
+		//find student by sid 
+		/*
+		Student s= session.createQuery("from Student where sid=:a",Student.class)
+				.setParameter("a", 5)
+				.uniqueResult();
+		System.out.println(s);
+		*/
+//		--------------------------------------
+		//find student by sid or sname gives multiple records 
+		/*
+		List<Student> list = session.createQuery("from Student where sid=:a or sname=:b",Student.class)
+				.setParameter("a", 6)
+				.setParameter("b", "UKMEKXHKVLIJYOD")
+				.list();
+		for(Student s :list)
+			System.out.println(s);
+		*/
+//		-----------------------------------------
+		//finding the student by the sid and sname
+		/*
+		Student s = session.createQuery("from Student where sid =:a and sname=:b",Student.class)
+				.setParameter("a",5)
+				.setParameter("b", "UKMEKXHKVLIJYOD")
+				.uniqueResult();
+		System.out.println(s);
+		*/
+//		--------------------------------------------
+		//find studets record by spercentage in between range
+		/*
+		List<Student> list = session.createQuery("from Student where spercentage between :a and :b order by spercentage",Student.class)
+				.setParameter("a",10.0)
+				.setParameter("b", 20.0)
+				.list();
+		for(Student s:list)
+			System.out.println(s);
+		 */
+		
+		
+		
+		
 		
 		tx.commit(); 
 		session.close();
