@@ -43,9 +43,7 @@ public class StudentDao2 {
 		return check;
 	}
 	
-	
-	public int 
-	
+		
 	
 }
 

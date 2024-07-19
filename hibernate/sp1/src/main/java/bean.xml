@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	<bean id="d1" class="com.model.Department">
+		<property name="did" value="1"></property>
+		<property name="dname" value="Arts"></property>
+		<property name="subjects" ref="sub1"></property>
+	</bean>
+	
+
+	<bean id="sub1" class="com.model.Subject">
+		<property name="sid" value="1"> </property>
+		<property name="sname" value="English"></property>
+		</bean>
+		<bean id="sub2" class="com.model.Subject">
+		<property name="sid" value="2"> </property>
+		<property name="sname" value="Marathi"></property>
+		</bean>
+		<bean id="sub3" class="com.model.Subject">
+		<property name="sid" value="3"> </property>
+		<property name="sname" value="Math"></property>
+		</bean>
+		<bean id="sub4" class="com.model.Subject">
+		<property name="sid" value="4"> </property>
+		<property name="sname" value="Science"></property>
+		</bean>
+		<bean id="sub5" class="com.model.Subject">
+		<property name="sid" value="5"> </property>
+		<property name="sname" value="History"></property>
+		</bean>
+	</bean>
+
+</beans>
